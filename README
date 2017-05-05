@@ -1,0 +1,30 @@
+Count words in a text file.
+
+This has been built as a single command application, using the Symfony Console component
+to do the CLI processing. Application logic is in the Counter\CountWords class.
+
+Ensure you run composer install before running application or tests.
+
+To run:
+Example:
+  php application.php
+
+
+Usage:
+  app:frequent-words [options] [--] [<path>]
+
+Arguments:
+  path                  A path to the text file you wish to count frequently used words in [default: "https://s3-eu-west-1.amazonaws.com/secretsales-dev-test/interview/flatland.txt"]
+
+Options:
+  -l, --limit=LIMIT     Show this number of frequent words [default: 100]
+  -h, --help            Display this help message
+  -q, --quiet           Do not output any message
+  -V, --version         Display this application version
+      --ansi            Force ANSI output
+      --no-ansi         Disable ANSI output
+  -n, --no-interaction  Do not ask any interactive question
+  -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+Help:
+  This command will count the frequently used words in a text file, located at the path you provide.
